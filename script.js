@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         // Display feedback
+        feedbackDiv.style.display = 'block'; // Make feedbackDiv visible
+
         if (isValid) {
             feedbackDiv.textContent = 'Registration successful!';
             feedbackDiv.style.color = '#28a745'; // Green color for success
-            feedbackDiv.style.display = 'block';
         } else {
             feedbackDiv.innerHTML = messages.join('<br>'); // Display all messages
-            feedbackDiv.style.color = '#d8000c'; // Red color for errors
-            feedbackDiv.style.display = 'block';
+            feedbackDiv.style.color = '#dc3545'; // Red color for errors
         }
     });
 });
